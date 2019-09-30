@@ -20,6 +20,15 @@ this.itemList = {
 	6: {bankerring: 1}
 };
 
+// API test
+var xhr = new XMLHttpRequest();
+xhr.open('POST', 'https://slack.com/api/chat.postMessage');
+xhr.setRequestHeader('content-type', 'application/json');
+xhr.setRequestHeader('Authorization', 'Bearer xoxb-621592343491-766229651091-Qz4zM5OPUWkowSoRVJIJFZD2');
+
+xhr.send( '{"channel" : "send-msg-test-channel","text": "hello!!"}' );
+
+
 // ルーレットオブジェクト（獲得商品用）
 var itemRoulette;
 
